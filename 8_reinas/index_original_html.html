@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Reinas - lani ☆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/function.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Panel de opciones -->
+        <div class="panel">
+            <p><strong>Selecciona el tipo de Reina:</strong></p>
+
+            <label>
+                <input type="radio" name="queen" checked onchange="tipoReyna=1;">
+                Tipo 1
+            </label>
+
+            <label>
+                <input type="radio" name="queen" onchange="tipoReyna=2;">
+                Tipo 2
+            </label>
+
+            <label>
+                <input type="radio" name="queen" onchange="tipoReyna=3;">
+                Tipo 3
+            </label>
+
+            <button onclick="solveEightQueens1()">Solución 1</button>
+            <button onclick="solveEightQueens2()">Solución 2</button>
+            <button onclick="solveEightQueens3()">Solución 3</button>
+            
+            <p><strong>Colores del tablero:</strong></p>
+            <p>Color de celda clara:</p>
+            <input type="color" id="color1" value="#ffc0cb">
+            
+            <p>Color de celda oscura:</p>
+            <input type="color" id="color2" value="#f5f5dc">
+
+            <button onclick="resetBoard()">Reiniciar Tablero</button>
+
+        </div>
+
+        <!-- Tablero -->
+        <table class="tablero">
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+                <td onclick="cellClick(this)"></td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
